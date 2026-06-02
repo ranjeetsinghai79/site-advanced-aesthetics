@@ -2,162 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "slate",
-  niche: "medspa",
-  name: "Lumière Med Spa",
-  tagline: "Where Science Meets Beauty.",
-  phone: "(555) 456-7890",
-  phoneHref: "tel:+15554567890",
-  email: "hello@lumieremedspa.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Mountain House", "Dublin", "Pleasanton"],
-  license: "CA MED #98765",
-  since: "2015",
-  google_rating: "5.0",
-  review_count: "234",
-  emergency: false,
-  social: {
-    google: "https://google.com",
-    yelp: "https://yelp.com",
-    facebook: "https://facebook.com",
+    name: "Advanced Aesthetics",
+    tagline: "Enhance Your Natural Beauty Today",
+    phone: "(702) 555-1234",
+    phoneHref: "tel:+17025551234",
+    email: "info@advancedaesthetics.com",
+    address: "123 Aesthetic Ave, Las Vegas, NV 89109",
+    city: "Las Vegas",
+    serviceAreas: ["Las Vegas", "San Diego", "Dallas"],
+    license: "NV Medical Board #12345",
+    since: "2018",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "noir",
+    niche: "medspa",
   },
-},
 
   services: [
-  {
-    icon: "sparkles",
-    title: "Botox & Fillers",
-    desc: "Natural-looking wrinkle reduction and volume restoration. Board-certified injectors. Results you'll love.",
-    urgent: false,
-  },
-  {
-    icon: "zap",
-    title: "Laser Hair Removal",
-    desc: "Permanent hair reduction on all skin types. 6-session packages with dramatic, lasting results.",
-    urgent: false,
-  },
-  {
-    icon: "droplets",
-    title: "HydraFacial",
-    desc: "Deep cleanse, extract, and hydrate in 30 minutes. Instant glow. Zero downtime. A client favorite.",
-    urgent: false,
-  },
-  {
-    icon: "sun",
-    title: "Chemical Peels",
-    desc: "Resurface and renew with medical-grade peels. Treat acne, hyperpigmentation, and fine lines.",
-    urgent: false,
-  },
-  {
-    icon: "activity",
-    title: "Microneedling",
-    desc: "Stimulate collagen naturally. Treats scars, texture, and signs of aging. PRP add-on available.",
-    urgent: false,
-  },
-  {
-    icon: "star",
-    title: "Body Contouring",
-    desc: "Non-surgical fat reduction and skin tightening. Sculpt your silhouette without surgery or downtime.",
-    urgent: false,
-  },
-],
+    { icon: "sparkles", title: "Botox & Dysport", desc: "Smooth away wrinkles and fine lines for a refreshed, youthful appearance.", urgent: false },
+    { icon: "heart", title: "Dermal Fillers", desc: "Restore volume, contour features, and enhance lips with premium Juvéderm and Restylane®.", urgent: false },
+    { icon: "scissors", title: "Body Contouring", desc: "Sculpt your ideal physique with advanced treatments like Coolsculpting and Morpheus8.", urgent: false },
+    { icon: "zap", title: "Laser Treatments", desc: "Achieve clear, radiant skin with laser hair removal, tattoo removal, and CO2 laser treatments.", urgent: false },
+    { icon: "droplets", title: "Skincare & Facials", desc: "Personalized facials, chemical peels, and advanced skincare to rejuvenate and protect your skin.", urgent: false },
+    { icon: "shield-check", title: "Wellness & HRT", desc: "Optimize your health with hormone replacement therapy, IV therapy, and medical weight loss programs.", urgent: false }
+  ],
 
   testimonials: [
-  {
-    name: "Amanda W.",
-    location: "Tracy, CA",
-    stars: 5,
-    text: "My Botox looks so natural — exactly what I wanted. The injector took so much time to understand my goals. I've been coming back every 4 months for 2 years.",
-  },
-  {
-    name: "Priya K.",
-    location: "Stockton, CA",
-    stars: 5,
-    text: "Laser hair removal changed my life. After 6 sessions, I'm basically hair-free. The staff made me feel comfortable the entire time.",
-  },
-  {
-    name: "Rachel D.",
-    location: "Dublin, CA",
-    stars: 5,
-    text: "Monthly HydraFacials have completely transformed my skin. I get compliments constantly. Worth every single penny.",
-  },
-],
+    { name: "Sarah L.", location: "Las Vegas, NV", stars: 5, text: "I had a fantastic experience with my Botox treatment last month. The staff was incredibly professional and made me feel so comfortable. My results are natural and I look years younger! Highly recommend Advanced Aesthetics for their expertise and care." },
+    { name: "Mark T.", location: "San Diego, CA", stars: 5, text: "The team at Advanced Aesthetics helped me with my hair transplant, and I couldn't be happier. From the initial consultation to post-procedure care, everything was explained clearly. The outcome exceeded my expectations, giving me back my confidence." },
+    { name: "Jessica R.", location: "Dallas, TX", stars: 5, text: "My lip filler appointment was wonderful! The injector was very skilled and listened to exactly what I wanted. I got subtle, beautiful results without looking overdone. The clinic is clean and modern, and the entire process was seamless and pleasant." }
+  ],
 
   trustBadges: [
-  "Board-Certified Providers",
-  "FDA-Approved Treatments",
-  "Medical-Grade Products",
-  "Free Consultations",
-  "Financing Available",
-  "5-Star Rated on Google",
-],
+    "Board-Certified Practitioners", "Personalized Treatment Plans", "Cutting-Edge Technology", "Multiple Clinic Locations", "5-Star Rated Experience"
+  ],
 
   stats: [
-  {
-    "value": 5,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 1170,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 11,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 5000, label: "Happy Clients", suffix: "+", decimals: 0 },
+    { value: 10, label: "Years Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI concierge books treatments, answers service questions, and collects reviews via call, text, or WhatsApp. Available 24/7, never a wait."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "award", title: "Expert Practitioners", desc: "Our team consists of highly trained and certified aesthetic professionals." },
+    { icon: "sparkles", title: "Personalized Care", desc: "We tailor every treatment plan to your unique needs and aesthetic goals." },
+    { icon: "shield-check", title: "Advanced Technology", desc: "Utilizing the latest, most effective technologies for superior results." },
+    { icon: "thumbs-up", title: "Natural-Looking Results", desc: "Achieve beautiful enhancements that complement your natural beauty." },
+    { icon: "home", title: "Comfortable Environment", desc: "Relax in our luxurious, state-of-the-art clinics designed for your comfort." },
+    { icon: "briefcase", title: "Comprehensive Services", desc: "A wide range of aesthetic and wellness treatments under one roof." }
+  ],
 
-  formServiceOptions: [
-  "Botox & Fillers",
-  "Laser Hair Removal",
-  "HydraFacial",
-  "Chemical Peels",
-  "Microneedling",
-  "Body Contouring"
-],
+  formServiceOptions: ["Botox", "Dysport", "Juvéderm", "Lip Fillers", "Coolsculpting", "Laser Hair Removal", "Custom Facial", "Chemical Peels", "Medical Weight Loss"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
